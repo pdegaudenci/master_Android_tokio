@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lista">
+        <item>¿ Cuantos años tienes ?</item>
+        <item>Campo 1</item>
+        <item>Campo 2</item>
+
+    </string-array>
+</resources>

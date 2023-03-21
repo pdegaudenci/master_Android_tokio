@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_registro">
+        <item name="android:backgroundTint">#F4FB16</item>
+        <item name="android:text">Me apunto</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+</resources>

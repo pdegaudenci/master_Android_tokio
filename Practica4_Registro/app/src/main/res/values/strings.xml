@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practica4_Registro</string>
+    <string name="nombre">¿ Como te llamas ?</string>
+    <string name="apellido">¿ Y tu apellido ?</string>
+</resources>
