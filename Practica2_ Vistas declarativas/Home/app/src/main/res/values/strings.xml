@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tu App de Viajes</string>
+    <string name="description">Hola, estamos buscando a millones de usuarios con inquietudes y ganas de viajar. Si eres tu? No lo dudes accede a nuestra app y descubriras miles de destinos y facilidades para alquilar coches, ver el tiempo ....</string>
+    <string name="titulo2">Upcoming meetups</string>
+    <string name="tarjeta_2">City of Los Angeles</string>
+    <string name="tarjeta_1">USA, Los Angeles - 2 Weeks</string>
+    <string name="tarjeta1">Madves - 3 weeks</string>
+    <string name="tarjeta2">Beach Vacation</string>
+</resources>
