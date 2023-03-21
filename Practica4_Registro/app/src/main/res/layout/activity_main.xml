@@ -7,19 +7,21 @@
     tools:context=".MainActivity"
     android:background="#C2FFF5">
 
-    <ImageView
+    <TextView
         android:id="@+id/img_registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="179dp"
+        android:layout_height="137dp"
         android:layout_gravity="center_vertical"
-        android:src="@mipmap/ic_register_foreground"
+        android:layout_marginVertical="30dp"
+        android:background="@mipmap/ic_register_foreground"
+        android:drawableBottom="@mipmap/ic_camara_foreground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginVertical="30dp"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_nombre"
@@ -38,7 +40,7 @@
             android:drawableEnd="@mipmap/ic_derecha_foreground"
             android:textSize="12dp"
             android:hint="@string/nombre"
-
+            app:errorEnabled="true"
             android:inputType="text"
             android:singleLine="true"
             app:layout_constraintTop_toBottomOf="@id/img_registro" />
@@ -64,6 +66,7 @@
             android:inputType="text"
             android:singleLine="true"
             android:textSize="12dp"
+            app:errorEnabled="true"
             app:layout_constraintTop_toBottomOf="@id/campo_nombre"
             tools:layout_editor_absoluteX="16dp" />
 
@@ -75,17 +78,21 @@
         android:layout_height="104dp"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="58dp"
+        android:hint="Cual es tu edad?"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/til_apellido">
 
-        <Spinner
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
             android:id="@+id/seleccion"
             android:layout_width="match_parent"
             android:layout_height="43dp"
             android:layout_marginVertical="30dp"
-            android:background="#CBCBCB" />
+            android:clickable="true"
+            tools:ignore="KeyboardInaccessibleWidget"
+            android:background="#CBCBCB"
+            app:errorEnabled="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
@@ -108,7 +115,7 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <TextView
-            android:id="@+id/account_txt"
+            android:id="@+id/privacidad_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Politica de Privacidad"
@@ -117,7 +124,7 @@
             android:textFontWeight="900"
             android:textSize="18sp" />
         <TextView
-            android:id="@+id/create_btn"
+            android:id="@+id/condiciones_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"

@@ -2,8 +2,9 @@
 <resources>
     <string-array name="lista">
         <item>¿ Cuantos años tienes ?</item>
-        <item>Campo 1</item>
-        <item>Campo 2</item>
-
+        <item>0-5 años</item>
+        <item>6-11 años</item>
+        <item>12-17 años</item>
+        <item>18-99 años</item>
     </string-array>
 </resources>
